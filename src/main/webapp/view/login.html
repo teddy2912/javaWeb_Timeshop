@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="./../login.css?v=1" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+
+
+	<section>
+		<!--Bắt Đầu Phần Hình Ảnh-->
+		<div class="img-bg">
+			<img
+				src="https://niemvuilaptrinh.ams3.cdn.digitaloceanspaces.com/tao_trang_dang_nhap/hinh_anh_minh_hoa.jpg"
+				alt="Hình Ảnh Minh Họa">
+		</div>
+		<!--Kết Thúc Phần Hình Ảnh-->
+		<!--Bắt Đầu Phần Nội Dung-->
+		<div class="noi-dung">
+			<div class="form">
+				<h2>Trang tùm lum</h2>
+				<form action="${pageContext.request.contextPath}/login" method="POST">
+
+					
+					<div class="input-form">
+						<span>user name</span> <input type="text" name="userName" value="${user.userName}">
+					</div>
+					
+					<div class="input-form">
+						<span>pass word</span> <input type="password" name="password" value="password">
+					</div>
+					<div class="input-form">
+						<span>remember me</span> <input type="checkbox" name="rememberMe" value = "y">
+					</div>
+					
+					<div class="input-form">
+						<input type="submit" value="Submit" >
+						<a href="${pageContext.request.contextPath}/">Cancel</a>
+					</div>
+					<div class="input-form">
+						<p>
+							Bạn Chưa Có Tài Khoản? <a href="#">Đăng Ký</a>
+						</p>
+					</div>
+				</form>
+				<h3>Đăng Nhập Bằng Mạng Xã Hội</h3>
+				<ul class="icon-dang-nhap">
+					<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+					<li><i class="fa fa-google" aria-hidden="true"></i></li>
+					<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+				</ul>
+			</div>
+		</div>
+		<!--Kết Thúc Phần Nội Dung-->
+	</section>
+</body>
+</html>
